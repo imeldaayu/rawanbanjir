@@ -13,7 +13,7 @@
 <body>
     <div id="map">
         <script>
-            var map = L.map('map').setView([-7.76099,110.492642], 13);
+            var map = L.map('map').setView([-7.760999, 110.492642], 13);
 
             var baseLayers = {
                 'Esri WorldTopoMap': L.tileLayer.provider('Esri.WorldTopoMap'),
@@ -45,14 +45,14 @@
                 AreaRawanBanjir.addData(data);
             });
 
-			/* Merubah Tampilan Warna Berdasar Atribut Klas Banjir */
-			var KlasBanjir = {
-				"aman":"#006100",
-				"cukup aman":"#7bab00",
-				"agak rawan":"#ffff00",
-				"rawan":"#ff9900",
-				"sangat rawan":"#ff2200"
-			};
+            /* Merubah Tampilan Warna Berdasar Atribut Klas Banjir */
+            var KlasBanjir = {
+                "aman":"#006100",
+                "cukup aman":"#7bab00",
+                "agak aman":"#ffff00",
+                "rawan":"#ff9900",
+                "sangat rawan":"#ff2200"
+            };
 
             var mapLayers = {
                 'Area Rawan Banjir': AreaRawanBanjir
