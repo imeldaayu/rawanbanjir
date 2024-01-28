@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>WebGis</title>
+    <title>WebGIS</title>
     <link rel="stylesheet" href="library/leaflet/leaflet.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="library/leaflet/leaflet.js"></script>
@@ -13,7 +13,7 @@
 <body>
     <div id="map">
         <script>
-            var map = L.map('map').setView([-7.765595, 110.490187], 13);
+            var map = L.map('map').setView([-7.76099,110.492642], 13);
 
             var baseLayers = {
                 'Esri WorldTopoMap': L.tileLayer.provider('Esri.WorldTopoMap'),
@@ -36,7 +36,7 @@
                 },
                 onEachFeature: function( feature, layer ){
                     layer.bindPopup(
-                        "Klas Rawan Banjir : " + "<left>" + feature.properties.Keterangan+ "</left>" + "<br>" +
+                        "Klas Rawan Banjir : " + "<left>" + feature.properties.Keterangan + "</left>" + "<br>" +
                         "Luas :" + "<left>" + feature.properties.Luas + "</left>" + " m2"
                         )
                 }
@@ -47,11 +47,11 @@
 
 			/* Merubah Tampilan Warna Berdasar Atribut Klas Banjir */
 			var KlasBanjir = {
-				"Aman":"#006100",
-				"Cukup Aman":"##7aab00",
-				"Agak Aman":"#ffff00",
-				"Rawan":"#ff9900",
-				"Sangat Rawan":"#ff2200"
+				"aman":"#006100",
+				"cukup aman":"#7bab00",
+				"agak rawan":"#ffff00",
+				"rawan":"#ff9900",
+				"sangat rawan":"#ff2200"
 			};
 
             var mapLayers = {
